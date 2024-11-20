@@ -1,0 +1,15 @@
+{
+  "name": "My Tasks",
+  "short_name": "tasks",
+  "description": "A simple, easy-to-use task manager - manage your tasks without the headache.",
+  "start_url": "/",
+  "background_color": "#f2f2f2",
+  "theme_color": "#26abff, #ff26ab",
+  "icons": [
+    {
+      "src": "./icon.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}
