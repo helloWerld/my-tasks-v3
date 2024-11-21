@@ -4,7 +4,7 @@
   "description": "A simple, easy-to-use task manager - manage your tasks without the headache.",
   "start_url": "/",
   "background_color": "#f2f2f2",
-  "theme_color": "#26abff, #ff26ab",
+  "theme_color": "#26abff",
   "icons": [
     {
       "src": "./icon.png",
