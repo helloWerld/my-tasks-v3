@@ -6,8 +6,8 @@ const MyTasks = () => {
   const { user } = useAuth();
 
   return (
-    <section className="flex flex-col w-full items-center justify-center gap-4">
-      {user ? <h1>Hello, {user.displayName}</h1> : <SignInGoogle />}
+    <section className="flex flex-col w-full h-screen items-center justify-center gap-4">
+      {user ? <></> : <SignInGoogle />}
     </section>
   );
 };
