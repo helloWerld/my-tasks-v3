@@ -4,7 +4,7 @@ import Divider from "@/components/ui/Divider";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center">
+    <div className="flex min-h-screen w-full flex-col items-center">
       <Header />
       <Divider />
       <MyTasks />
