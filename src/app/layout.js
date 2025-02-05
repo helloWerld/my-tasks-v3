@@ -1,8 +1,10 @@
 import "./globals.css";
 import { poppins } from "@/components/ui/fonts";
 import { AuthProvider } from "@/context/AuthContext";
+import { FirestoreProvider } from "@/context/FirestoreContext";
 import Footer from "@/components/ui/Footer";
 import NavBar from "@/components/ui/NavBar";
+import { TaskProvider } from "@/context/TaskContext";
 
 export const metadata = {
   metadataBase: new URL("http://localhost:3000"), // change to production url
@@ -37,9 +39,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${poppins.className} antialiased`}>
         <AuthProvider>
-          <NavBar />
-          {children}
-          <Footer />
+          <FirestoreProvider>
+            <TaskProvider>
+              <NavBar />
+              {children}
+              <Footer />
+            </TaskProvider>
+          </FirestoreProvider>
         </AuthProvider>
       </body>
     </html>
